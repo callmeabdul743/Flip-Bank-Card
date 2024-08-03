@@ -1,0 +1,144 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background-color: #080A18;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+section::before {
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient(100deg, #9735a2, white);
+    transform: translate(-220px, -130px);
+}
+section::after {
+    content: "";
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient(100deg, #9735a2, white);
+    transform: translate(220px, 130px);
+}
+.container{
+    height: 250px;
+    width: 480px;
+    z-index: 100;
+    position: absolute;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.cardf, .cardb{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    backdrop-filter: blur(25px);
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    box-shadow: 1px 1px 3px 4px  rgba(0, 00, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.container:hover{
+    transform: rotateY(180deg);
+}
+.cardb{
+    transform: rotateY(180deg);
+
+}
+.header1{
+    display:flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.logo{
+    color:white;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 80px;
+}
+.logo p{
+    font-size: 20px;
+    font-weight: 100px;
+    margin-left:5px;
+}
+.chip img{
+    width: 90px;
+}
+.con1{
+    color:white;
+    margin-left: 20px;
+}
+.con1 p{
+    font-size:15px;
+    font-weight: 100;
+}
+.con1 #pa{
+    margin-top: 5px;
+    font-size: 22px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 22px;
+    color:white;
+}
+.footer1{
+    font-size: 20px;
+
+}
+.cardb p{
+    color: white;
+    font-size: 15px;
+    margin:30px 30px 20px 30px;
+}
+.black{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.stript{
+    margin: 10px 20px 0 20px;
+    display:flex;
+    align-items: center;
+}
+.stript_inner1{
+    height: 28px;
+    background-color: white;
+    width:350px;
+    border-radius: 3px;
+}
+.line{
+    background-color: rgb(143, 141, 139);
+    height: 5px;
+    width: 98%;
+    margin:3px;
+    border-radius:20px;
+}
+.stript2{
+    background-color: white;
+    padding:2px;
+    border-radius: 0 3px 3px 0;
+}
+#parat{
+    color:white;
+    font-weight: 200px;
+    font-size: 11px;
+    margin:20px;
+}
